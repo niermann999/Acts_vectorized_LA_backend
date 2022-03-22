@@ -32,7 +32,7 @@ target_compile_features( Core INTERFACE cxx_std_17 )
 # General compile options
 add_compile_options(
        -O3 --std=c++17
-       -Wall -Wextra -Wshadow -fstrict-aliasing -Wno-deprecated-declarations -Wstrict-aliasing ${Vc_ARCHITECTURE_FLAGS}
+       -Wall -Wextra -Wshadow -fstrict-aliasing -Wno-deprecated-declarations -Wno-unused-parameter -Wstrict-aliasing ${Vc_ARCHITECTURE_FLAGS}
 )
 
 add_subdirectory(src)

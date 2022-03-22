@@ -42,7 +42,7 @@ using vc_vec4_t = Vc::SimdArray<float, 4>;
 
 // Vc matrix type
 template<typename vector_t>
-class Matrix4;
+struct Matrix4;
 using vc_mat4x4_t = Matrix4<vc_vec4_t>;
 
 
