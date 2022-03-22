@@ -35,4 +35,6 @@ add_compile_options(
        -Wall -Wextra -Wshadow -fstrict-aliasing -Wno-deprecated-declarations -Wstrict-aliasing ${Vc_ARCHITECTURE_FLAGS}
 )
 
+enable_testing()
+
 add_subdirectory(src)
