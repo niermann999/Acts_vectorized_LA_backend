@@ -34,9 +34,6 @@ macro(add_benchmark _name)
     Vc::Vc
   )
 
-  # register as unittest executable
-  add_test(NAME ${_name} COMMAND ${_target})
-
   # install benchmark
   install( TARGETS ${_target} RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}" )
 
